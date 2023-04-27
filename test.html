@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Password Generator</h1>
+    <div className="password_container">
+      <span className="random_pass">randomnumbersAnd436563</span>
+      <img src="./assets/images/icon-copy.svg" alt="copy" />
+    </div>
+    <div class="card">
+      <div class="slide_container">
+        <span class="char">Character Length</span>
+        <span class="char_length_num">10</span>
+        <input
+          type="range"
+          min="0"
+          max="20"
+          value="10"
+          step="1"
+          class="slider-bar"
+          id="myRange"
+        />
+      </div>
+      <div class="checkbox_container">
+        <label>
+          <input type="checkbox" name="uppercase" value="uppercase" />
+          Include Uppercase Letters
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="lowercase" value="lowercase" />
+          Include Lowercase Letters
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="numbers" value="numbers" />
+          Include Numbers
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="symbols" value="symbols" />
+          Include Symbols
+        </label>
+      </div>
+      <div class="strength_container">
+        <span class="strength_text">STRENGTH</span>
+        <div class="textNblocks_container">
+          <span class="strength_indicator_text">MEDIUM</span>
+          <div class="blocks"></div>
+        </div>
+      </div>
+      <div class="generate_container">
+        <span class="generate_text">GENERATE</span>
+        <img src="" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

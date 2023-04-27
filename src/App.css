@@ -1,0 +1,136 @@
+@font-face {
+  font-family: JetBrainsMono;
+  src: url("./assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url("./assets/fonts/JetBrainsMono-VariableFont_wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: JetBrainsMono, Arial, sans-serif;
+  /* font-size: 16px; */
+}
+
+:root {
+  --dark-gray: #24232c;
+  --gray: #817d92;
+  --almost-white: #e6e5ea;
+  --very-dark-gray: #18171f;
+  --neon-green: #a4ffaf;
+  --red: #f64a4a;
+  --orange: #fb7c58;
+  --yellow: #f8cd65;
+  --white: #ffffff;
+  --bcg-color: #f2f2f2;
+}
+
+body {
+  background-color: var(--very-dark-gray);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--gray);
+  font-size: 24px;
+  margin-bottom: 31px;
+}
+.password_container {
+  width: 540px;
+  height: 80px;
+  padding: 0px 28px;
+  background-color: var(--dark-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.password_container span {
+  color: var(--almost-white);
+  font-size: 32px;
+}
+.card {
+  padding: 32px;
+  width: 540px;
+  background-color: var(--dark-gray);
+}
+.slide_container {
+  margin-bottom: 32px;
+}
+.slide_container input {
+  width: 100%;
+}
+
+.text_number_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.text_number_container .char {
+  color: var(--almost-white);
+  font-size: 18px;
+}
+.text_number_container .length_num {
+  color: var(--neon-green);
+  font-size: 32px;
+}
+.checkbox_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.checkbox_container label {
+  color: var(--almost-white);
+  line-height: 18px;
+}
+.checkbox_container input[type="checkbox"] {
+  margin-right: 24px;
+  background-color: red;
+  border: 2px solid var(--almost-white);
+}
+.checkbox_container input[type="checkbox"]:checked {
+  background-color: yellow;
+}
+label {
+  margin-bottom: 19px;
+}
+.strength_container {
+  padding: 20px;
+  background-color: var(--very-dark-gray);
+  width: 476px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.strength_container .strength_text {
+  color: var(--gray);
+  font-size: 18px;
+}
+.strength_container .strength_indicator_text {
+  color: var(--almost-white);
+  font-size: 24px;
+}
+.generate_container {
+  background-color: var(--neon-green);
+  width: 476px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}

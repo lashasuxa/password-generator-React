@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import {numbers,upperCaseLetters ,lowerCaseLetters,specialCharacters  } from './character'
 
 
@@ -96,7 +95,7 @@ function App() {
     <h1>Password Generator</h1>
     <div className="password_container">
       <span className="random_pass">{password}</span>
-     <button onClick={handleCopyPassword} > <img src="/icon-copy.svg" alt="copy" /> </button>
+     <button onClick={handleCopyPassword} > <img src="./assets/icon-copy.svg" alt="copy" /> </button>
     </div>
     <div className="card">
       <div className="slide_container">
@@ -181,7 +180,7 @@ function App() {
       </div>
       <button onClick={handleGeneratePassword} className="generate_container">
         <span className="generate_text">GENERATE</span>
-        <img src="/icon-arrow-right.svg" alt="arrow"/>
+        <img src="./assets/icon-arrow-right.svg" alt="arrow"/>
       </button>
     </div>
   

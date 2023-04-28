@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Copy from "../public/icon-copy.svg"
+import Arrow from "../public/icon-arrow-right.svg"
 
 import {numbers,upperCaseLetters ,lowerCaseLetters,specialCharacters  } from './character'
 
@@ -95,7 +97,7 @@ function App() {
     <h1>Password Generator</h1>
     <div className="password_container">
       <span className="random_pass">{password}</span>
-     <button onClick={handleCopyPassword} > <img src="/dist/icon-copy.svg" alt="copy" /> </button>
+     <button onClick={handleCopyPassword} > <img src={Copy} alt="copy" /> </button>
     </div>
     <div className="card">
       <div className="slide_container">
@@ -180,7 +182,7 @@ function App() {
       </div>
       <button onClick={handleGeneratePassword} className="generate_container">
         <span className="generate_text">GENERATE</span>
-        <img src="/dist/icon-arrow-right.svg" alt="arrow"/>
+        <img src={Arrow} alt="arrow"/>
       </button>
     </div>
   

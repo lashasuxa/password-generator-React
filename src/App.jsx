@@ -95,7 +95,7 @@ function App() {
     <h1>Password Generator</h1>
     <div className="password_container">
       <span className="random_pass">{password}</span>
-     <button onClick={handleCopyPassword} > <img src="/public/icon-copy.svg" alt="copy" /> </button>
+     <button onClick={handleCopyPassword} > <img src="/dist/icon-copy.svg" alt="copy" /> </button>
     </div>
     <div className="card">
       <div className="slide_container">
@@ -180,7 +180,7 @@ function App() {
       </div>
       <button onClick={handleGeneratePassword} className="generate_container">
         <span className="generate_text">GENERATE</span>
-        <img src="/public/icon-arrow-right.svg" alt="arrow"/>
+        <img src="/dist/icon-arrow-right.svg" alt="arrow"/>
       </button>
     </div>
   

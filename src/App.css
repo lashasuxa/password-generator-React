@@ -43,6 +43,7 @@ h1 {
   color: var(--gray);
   font-size: 24px;
   margin-bottom: 31px;
+  text-align: center;
 }
 .password_container {
   width: 540px;

@@ -54,6 +54,10 @@ h1 {
   justify-content: space-between;
   margin-bottom: 24px;
 }
+.password_container button {
+  background: transparent;
+  border: none;
+}
 .password_container span {
   color: var(--almost-white);
   font-size: 32px;
@@ -85,6 +89,25 @@ h1 {
   color: var(--neon-green);
   font-size: 32px;
 }
+.slider-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: var(--very-dark-gray);
+  outline: none;
+}
+
+.slider-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: var(--almost-white);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 .checkbox_container {
   display: flex;
   flex-direction: column;
@@ -97,7 +120,7 @@ h1 {
 }
 .checkbox_container input[type="checkbox"] {
   margin-right: 24px;
-  background-color: red;
+  background-color: transparent;
   border: 2px solid var(--almost-white);
 }
 .checkbox_container input[type="checkbox"]:checked {
@@ -125,6 +148,21 @@ label {
   color: var(--almost-white);
   font-size: 24px;
 }
+.textNblocks_container {
+  display: flex;
+  flex-direction: row;
+}
+.blocks {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-left: 15.5px;
+}
+.rectangle {
+  height: 28px;
+  width: 10px;
+  border: 2px solid var(--almost-white);
+}
 .generate_container {
   background-color: var(--neon-green);
   width: 476px;
@@ -133,4 +171,5 @@ label {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  border: none;
 }

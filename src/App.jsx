@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import Copy from "../public/icon-copy.svg"
-import Arrow from "../public/icon-arrow-right.svg"
+import Copy from "./assets/icon-copy.svg"
+import Arrow from "./assets/icon-arrow-right.svg"
+
+
 
 import {numbers,upperCaseLetters ,lowerCaseLetters,specialCharacters  } from './character'
 
